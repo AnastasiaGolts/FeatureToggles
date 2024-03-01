@@ -1,0 +1,4514 @@
+Name: "Experiments"
+Classes:
+- Name: "ExperimentsBase"
+  SwiftName: "KotlinBase"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsMutableSet"
+  SwiftName: "KotlinMutableSet"
+- Name: "ExperimentsMutableDictionary"
+  SwiftName: "KotlinMutableDictionary"
+- Name: "ExperimentsNumber"
+  SwiftName: "KotlinNumber"
+- Name: "ExperimentsByte"
+  SwiftName: "KotlinByte"
+- Name: "ExperimentsUByte"
+  SwiftName: "KotlinUByte"
+- Name: "ExperimentsShort"
+  SwiftName: "KotlinShort"
+- Name: "ExperimentsUShort"
+  SwiftName: "KotlinUShort"
+- Name: "ExperimentsInt"
+  SwiftName: "KotlinInt"
+- Name: "ExperimentsUInt"
+  SwiftName: "KotlinUInt"
+- Name: "ExperimentsLong"
+  SwiftName: "KotlinLong"
+- Name: "ExperimentsULong"
+  SwiftName: "KotlinULong"
+- Name: "ExperimentsFloat"
+  SwiftName: "KotlinFloat"
+- Name: "ExperimentsDouble"
+  SwiftName: "KotlinDouble"
+- Name: "ExperimentsBoolean"
+  SwiftName: "KotlinBoolean"
+- Name: "ExperimentsKotlinCancellationException"
+  SwiftName: "KotlinCancellationException"
+  Properties:
+  - Name: "cause"
+    PropertyKind: "Instance"
+    SwiftName: "cause"
+    Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "getStackTrace()"
+    ResultType: "ExperimentsKotlinArray<NSString *> * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "printStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "printStackTrace()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinIllegalStateException"
+  SwiftName: "KotlinIllegalStateException"
+  Properties:
+  - Name: "cause"
+    PropertyKind: "Instance"
+    SwiftName: "cause"
+    Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "getStackTrace()"
+    ResultType: "ExperimentsKotlinArray<NSString *> * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "printStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "printStackTrace()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+- Name: "ExperimentsKotlinRuntimeException"
+  SwiftName: "KotlinRuntimeException"
+  Properties:
+  - Name: "cause"
+    PropertyKind: "Instance"
+    SwiftName: "cause"
+    Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "getStackTrace()"
+    ResultType: "ExperimentsKotlinArray<NSString *> * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "printStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "printStackTrace()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+- Name: "ExperimentsKotlinException"
+  SwiftName: "KotlinException"
+  Properties:
+  - Name: "cause"
+    PropertyKind: "Instance"
+    SwiftName: "cause"
+    Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "getStackTrace()"
+    ResultType: "ExperimentsKotlinArray<NSString *> * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "printStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "printStackTrace()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+- Name: "ExperimentsKotlinThrowable"
+  SwiftName: "KotlinThrowable"
+  Properties:
+  - Name: "cause"
+    PropertyKind: "Instance"
+    SwiftName: "cause"
+    Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "getStackTrace()"
+    ResultType: "ExperimentsKotlinArray<NSString *> * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "printStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "printStackTrace()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "ExperimentsKotlinThrowable * _Nullable"
+- Name: "ExperimentsKotlinArray"
+  SwiftName: "KotlinArray"
+  Properties:
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "arrayWithSize:init:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:init:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "T _Nullable (^ _Nonnull)(ExperimentsInt * _Nonnull)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getIndex:"
+    MethodKind: "Instance"
+    SwiftName: "get(index:)"
+    ResultType: "T _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "id<ExperimentsKotlinIterator> _Nonnull"
+  - Selector: "setIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "set(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "T _Nullable"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinUnit"
+  SwiftName: "KotlinUnit"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinNothing"
+  SwiftName: "KotlinNothing"
+- Name: "ExperimentsSkieColdFlowIterator"
+  SwiftName: "SkieColdFlowIterator"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithFlow:"
+    MethodKind: "Instance"
+    SwiftName: "init(flow:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "cancel"
+    MethodKind: "Instance"
+    SwiftName: "cancel()"
+    ResultType: "void"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hasNextWithCompletionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__hasNext(completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(ExperimentsBoolean * _Nullable, NSError * _Nullable)"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "E _Nullable"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkieKotlinFlow"
+  SwiftBridge: "SkieSwiftFlow"
+  SwiftName: "SkieKotlinFlow"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkieKotlinMutableSharedFlow"
+  SwiftBridge: "SkieSwiftMutableSharedFlow"
+  SwiftName: "SkieKotlinMutableSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreMutableSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "emit(value:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+- Name: "ExperimentsSkieKotlinMutableStateFlow"
+  SwiftBridge: "SkieSwiftMutableStateFlow"
+  SwiftName: "SkieKotlinMutableStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreMutableStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "T _Nonnull"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "emit(value:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+- Name: "ExperimentsSkieKotlinOptionalFlow"
+  SwiftBridge: "SkieSwiftOptionalFlow"
+  SwiftName: "SkieKotlinOptionalFlow"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkieKotlinOptionalMutableSharedFlow"
+  SwiftBridge: "SkieSwiftOptionalMutableSharedFlow"
+  SwiftName: "SkieKotlinOptionalMutableSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreMutableSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "emit(value:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+- Name: "ExperimentsSkieKotlinOptionalMutableStateFlow"
+  SwiftBridge: "SkieSwiftOptionalMutableStateFlow"
+  SwiftName: "SkieKotlinOptionalMutableStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nullable"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreMutableStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "T _Nullable"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "emit(value:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+- Name: "ExperimentsSkieKotlinOptionalSharedFlow"
+  SwiftBridge: "SkieSwiftOptionalSharedFlow"
+  SwiftName: "SkieKotlinOptionalSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkieKotlinOptionalStateFlow"
+  SwiftBridge: "SkieSwiftOptionalStateFlow"
+  SwiftName: "SkieKotlinOptionalStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nullable"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkieKotlinSharedFlow"
+  SwiftBridge: "SkieSwiftSharedFlow"
+  SwiftName: "SkieKotlinSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkieKotlinStateFlow"
+  SwiftBridge: "SkieSwiftStateFlow"
+  SwiftName: "SkieKotlinStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkie_CancellationHandler"
+  SwiftName: "Skie_CancellationHandler"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "cancel"
+    MethodKind: "Instance"
+    SwiftName: "cancel()"
+    ResultType: "void"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkie_SuspendHandler"
+  SwiftName: "Skie_SuspendHandler"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithCancellationHandler:dispatcherDelegate:onResult:"
+    MethodKind: "Instance"
+    SwiftName: "init(cancellationHandler:dispatcherDelegate:onResult:)"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsSkie_CancellationHandler * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsSkie_DispatcherDelegate> _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(ExperimentsSkie_SuspendResult * _Nonnull)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkie_SuspendResult"
+  SwiftName: "Skie_SuspendResult"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkie_SuspendResultCanceled"
+  SwiftName: "Skie_SuspendResult.Canceled"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkie_SuspendResultError"
+  SwiftName: "Skie_SuspendResult.Error"
+  SwiftPrivate: true
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSError * _Nonnull"
+  Methods:
+  - Selector: "initWithError:"
+    MethodKind: "Instance"
+    SwiftName: "init(error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSError * _Nonnull"
+  - Selector: "doCopyError:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(error:)"
+    ResultType: "ExperimentsSkie_SuspendResultError * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSError * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkie_SuspendResultSuccess"
+  SwiftName: "Skie_SuspendResult.Success"
+  SwiftPrivate: true
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "initWithValue:"
+    MethodKind: "Instance"
+    SwiftName: "init(value:)"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "doCopyValue:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(value:)"
+    ResultType: "ExperimentsSkie_SuspendResultSuccess * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsDebugDataSourceFactory"
+  SwiftName: "DebugDataSourceFactory"
+  Properties:
+  - Name: "debugDataSource"
+    PropertyKind: "Instance"
+    SwiftName: "debugDataSource"
+    Type: "id<ExperimentsDebugDataSource> _Nonnull"
+  Methods:
+  - Selector: "initWithDataSourceDependencies:"
+    MethodKind: "Instance"
+    SwiftName: "init(dataSourceDependencies:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsDataSourceDependencies> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperimentsInteractorFactory"
+  SwiftName: "ExperimentsInteractorFactory"
+  Properties:
+  - Name: "interactor"
+    PropertyKind: "Instance"
+    SwiftName: "interactor"
+    Type: "id<ExperimentsExperimentsInteractor> _Nonnull"
+  Methods:
+  - Selector: "initWithDeps:"
+    MethodKind: "Instance"
+    SwiftName: "init(deps:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperimentsDependencies> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperimentsPreferencesSettingsProvider"
+  SwiftName: "ExperimentsPreferencesSettingsProvider"
+  Properties:
+  - Name: "settings"
+    PropertyKind: "Instance"
+    SwiftName: "settings"
+    Type: "id<ExperimentsMultiplatform_settingsObservableSettings> _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsPreferencesSettingsProviderCompanion"
+  SwiftName: "PreferencesSettingsProviderCompanion"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsOnToggleChangeCompanion"
+  SwiftName: "OnToggleChangeCompanion"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "invokeCallBack:"
+    MethodKind: "Instance"
+    SwiftName: "invoke(callBack:)"
+    ResultType: "id<ExperimentsOnToggleChange> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(id<ExperimentsToggle> _Nullable)"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsFlowExperimentsDataSource"
+  SwiftName: "FlowExperimentsDataSource"
+  Properties:
+  - Name: "priority"
+    PropertyKind: "Instance"
+    SwiftName: "priority"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithDataSource:"
+    MethodKind: "Instance"
+    SwiftName: "init(dataSource:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsObservableExperimentsDataSource> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolWith:"
+    MethodKind: "Instance"
+    SwiftName: "bool(with:)"
+    ResultType: "ExperimentsBoolToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "stringWith:"
+    MethodKind: "Instance"
+    SwiftName: "string(with:)"
+    ResultType: "ExperimentsStringToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "observeBoolToggleKey:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "observeBoolToggle(key:callBack:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "observeStringToggleKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "observeStringToggle(key:callback:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "boolToggleFlowKey:"
+    MethodKind: "Instance"
+    SwiftName: "boolToggleFlow(key:)"
+    ResultType: "ExperimentsKotlinUnit * _Nonnull (^ _Nonnull (^ _Nonnull)(ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(ExperimentsBoolToggle * _Nonnull, ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(void), ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nullable, ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nonnull, ExperimentsKotlinUnit * _Nonnull)))(void)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "stringToggleFlowKey:"
+    MethodKind: "Instance"
+    SwiftName: "stringToggleFlow(key:)"
+    ResultType: "ExperimentsKotlinUnit * _Nonnull (^ _Nonnull (^ _Nonnull)(ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(ExperimentsStringToggle * _Nonnull, ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(void), ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nullable, ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nonnull, ExperimentsKotlinUnit * _Nonnull)))(void)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "ExperimentsHardcodedExperimentsDataSource"
+  SwiftName: "HardcodedExperimentsDataSource"
+  Properties:
+  - Name: "priority"
+    PropertyKind: "Instance"
+    SwiftName: "priority"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithBoolExperiments:stringExperiments:"
+    MethodKind: "Instance"
+    SwiftName: "init(boolExperiments:stringExperiments:)"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, ExperimentsBoolToggle *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, ExperimentsStringToggle *> * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolWith:"
+    MethodKind: "Instance"
+    SwiftName: "bool(with:)"
+    ResultType: "ExperimentsBoolToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "stringWith:"
+    MethodKind: "Instance"
+    SwiftName: "string(with:)"
+    ResultType: "ExperimentsStringToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "observeBoolToggleKey:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "observeBoolToggle(key:callBack:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "observeStringToggleKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "observeStringToggle(key:callback:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsListenerCompanion"
+  SwiftName: "ListenerCompanion"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "invokeDeactivate:"
+    MethodKind: "Instance"
+    SwiftName: "invoke(deactivate:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsBoolExperiment"
+  SwiftName: "BoolExperiment"
+  Properties:
+  - Name: "key"
+    PropertyKind: "Instance"
+    SwiftName: "key"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithKey:"
+    MethodKind: "Instance"
+    SwiftName: "init(key:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolFor:with:"
+    MethodKind: "Instance"
+    SwiftName: "bool(for:with:)"
+    ResultType: "ExperimentsBoolToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperimentsInteractor> _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "boolInteractor:"
+    MethodKind: "Instance"
+    SwiftName: "bool(interactor:)"
+    ResultType: "ExperimentsBoolToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperimentsInteractor> _Nonnull"
+  - Selector: "isActive__Skie_DefaultArguments__1Interactor:"
+    MethodKind: "Instance"
+    SwiftName: "isActive(interactor:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperimentsInteractor> _Nonnull"
+  - Selector: "isActiveFor:with:"
+    MethodKind: "Instance"
+    SwiftName: "isActive(for:with:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperimentsInteractor> _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+- Name: "ExperimentsFlowExperimentsInteractor"
+  SwiftName: "FlowExperimentsInteractor"
+  Methods:
+  - Selector: "initWithExperimentsInteractor:"
+    MethodKind: "Instance"
+    SwiftName: "init(experimentsInteractor:)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperimentsInteractor> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolFor:with_:"
+    MethodKind: "Instance"
+    SwiftName: "bool(for:with:)"
+    ResultType: "ExperimentsBoolToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsBoolToggle * _Nonnull"
+  - Selector: "stringFor:with:"
+    MethodKind: "Instance"
+    SwiftName: "string(for:with:)"
+    ResultType: "ExperimentsStringToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsStringToggle * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "subscribeBoolToggleExperiment:defaultValue:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "subscribeBoolToggle(experiment:defaultValue:callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsBoolToggle * _Nonnull"
+    - Position: 2
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "subscribeStringToggleExperiment:defaultValue:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "subscribeStringToggle(experiment:defaultValue:callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsStringToggle * _Nonnull"
+    - Position: 2
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "unsubscribeBoolToggleCallBack:"
+    MethodKind: "Instance"
+    SwiftName: "unsubscribeBoolToggle(callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "unsubscribeStringToggleCallBack:"
+    MethodKind: "Instance"
+    SwiftName: "unsubscribeStringToggle(callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "boolToggleFlowExperiment:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "boolToggleFlow(experiment:defaultValue:)"
+    ResultType: "ExperimentsKotlinUnit * _Nonnull (^ _Nonnull (^ _Nonnull)(ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(ExperimentsBoolToggle * _Nonnull, ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(void), ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nullable, ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nonnull, ExperimentsKotlinUnit * _Nonnull)))(void)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsBoolToggle * _Nonnull"
+  - Selector: "stringToggleFlowExperiment:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "stringToggleFlow(experiment:defaultValue:)"
+    ResultType: "ExperimentsKotlinUnit * _Nonnull (^ _Nonnull (^ _Nonnull)(ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(ExperimentsStringToggle * _Nonnull, ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(void), ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nullable, ExperimentsKotlinUnit * _Nonnull), ExperimentsKotlinUnit * _Nonnull (^ _Nonnull)(NSError * _Nonnull, ExperimentsKotlinUnit * _Nonnull)))(void)"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsStringToggle * _Nonnull"
+- Name: "ExperimentsStringExperiment"
+  SwiftName: "StringExperiment"
+  Properties:
+  - Name: "key"
+    PropertyKind: "Instance"
+    SwiftName: "key"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithKey:"
+    MethodKind: "Instance"
+    SwiftName: "init(key:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "stringFor:with_:"
+    MethodKind: "Instance"
+    SwiftName: "string(for:with:)"
+    ResultType: "ExperimentsStringToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperimentsInteractor> _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsBoolToggle"
+  SwiftName: "BoolToggle"
+  Properties:
+  - Name: "canBeModified"
+    PropertyKind: "Instance"
+    SwiftName: "canBeModified"
+    Type: "BOOL"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "BOOL"
+  Methods:
+  - Selector: "initWithValue:canBeModified:"
+    MethodKind: "Instance"
+    SwiftName: "init(value:canBeModified:)"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "doCopyValue:canBeModified:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(value:canBeModified:)"
+    ResultType: "ExperimentsBoolToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsBoolToggleCompanion"
+  SwiftName: "BoolToggle.Companion"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsToggleCompanion"
+  SwiftName: "ToggleCompanion"
+  Methods:
+  - Selector: "equalsOther:"
+    MethodKind: "Instance"
+    SwiftName: "equals(other:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hashCode"
+    MethodKind: "Instance"
+    SwiftName: "hashCode()"
+    ResultType: "int32_t"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsKotlinArray<id<ExperimentsKotlinx_serialization_coreKSerializer>> * _Nonnull"
+  - Selector: "toString"
+    MethodKind: "Instance"
+    SwiftName: "toString()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsStringToggle"
+  SwiftName: "StringToggle"
+  Properties:
+  - Name: "canBeModified"
+    PropertyKind: "Instance"
+    SwiftName: "canBeModified"
+    Type: "BOOL"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithValue:canBeModified:"
+    MethodKind: "Instance"
+    SwiftName: "init(value:canBeModified:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "doCopyValue:canBeModified:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(value:canBeModified:)"
+    ResultType: "ExperimentsStringToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsStringToggleCompanion"
+  SwiftName: "StringToggle.Companion"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperimentsInteractorFactoryKt"
+  SwiftName: "ExperimentsInteractorFactoryKt"
+  Methods:
+  - Selector: "ExperimentsDataSourceProviderGetSource:"
+    MethodKind: "Class"
+    SwiftName: "ExperimentsDataSourceProvider(getSource:)"
+    ResultType: "id<ExperimentsExperimentsDataSourceProvider> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<id<ExperimentsObservableExperimentsDataSource>> * _Nonnull (^ _Nonnull)(void)"
+  - Selector: "createExperimentsInteractorGetSource:"
+    MethodKind: "Class"
+    SwiftName: "createExperimentsInteractor(getSource:)"
+    ResultType: "id<ExperimentsExperimentsInteractor> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<id<ExperimentsObservableExperimentsDataSource>> * _Nonnull (^ _Nonnull)(void)"
+- Name: "ExperimentsDebugDataSourceFactoryKt"
+  SwiftName: "DebugDataSourceFactoryKt"
+  Methods:
+  - Selector: "createDebugDataSourceSettingsProvider:"
+    MethodKind: "Class"
+    SwiftName: "createDebugDataSource(settingsProvider:)"
+    ResultType: "id<ExperimentsDebugDataSource> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsPreferencesSettingsProvider> _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePolymorphicKind"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePolymorphicKindOPEN"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.OPEN"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePolymorphicKindSEALED"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.SEALED"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreSerialKind"
+  SwiftName: "Kotlinx_serialization_coreSerialKind"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreSerialKindCONTEXTUAL"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.CONTEXTUAL"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreSerialKindENUM"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.ENUM"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKind"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindBOOLEAN"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BOOLEAN"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindBYTE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BYTE"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindCHAR"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.CHAR"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindDOUBLE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.DOUBLE"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindFLOAT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.FLOAT"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindINT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.INT"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindLONG"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.LONG"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindSHORT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.SHORT"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_corePrimitiveKindSTRING"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.STRING"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreStructureKind"
+  SwiftName: "Kotlinx_serialization_coreStructureKind"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreStructureKindCLASS"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.CLASS"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreStructureKindLIST"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.LIST"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreStructureKindMAP"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.MAP"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreStructureKindOBJECT"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.OBJECT"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreSerializersModule"
+  SwiftName: "Kotlinx_serialization_coreSerializersModule"
+  Methods:
+  - Selector: "dumpToCollector:"
+    MethodKind: "Instance"
+    SwiftName: "dumpTo(collector:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerializersModuleCollector> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getContextualKClass:typeArgumentsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "getContextual(kClass:typeArgumentsSerializers:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSArray<id<ExperimentsKotlinx_serialization_coreKSerializer>> * _Nonnull"
+  - Selector: "getPolymorphicBaseClass:value:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:value:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreSerializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id _Nonnull"
+  - Selector: "getPolymorphicBaseClass:serializedClassName:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:serializedClassName:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreDeserializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "Experiments__SkieSuspendWrappersKt"
+  SwiftName: "__SkieSuspendWrappersKt"
+  Methods:
+  - Selector: "Skie_Suspend__0__hasNextDispatchReceiver:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__0__hasNext(dispatchReceiver:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsSkieColdFlowIterator<id> * _Nonnull"
+    - Position: 1
+      Type: "ExperimentsSkie_SuspendHandler * _Nonnull"
+- Name: "Experiments__SkieTypeExportsKt"
+  SwiftName: "__SkieTypeExportsKt"
+  Methods:
+  - Selector: "skieTypeExportsP0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:"
+    MethodKind: "Class"
+    SwiftName: "skieTypeExports(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "ExperimentsKotlinx_serialization_corePolymorphicKind * _Nonnull"
+    - Position: 1
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKind * _Nonnull"
+    - Position: 2
+      Type: "ExperimentsKotlinx_serialization_coreSerialKindCONTEXTUAL * _Nonnull"
+    - Position: 3
+      Type: "ExperimentsKotlinx_serialization_coreSerialKindENUM * _Nonnull"
+    - Position: 4
+      Type: "ExperimentsKotlinx_serialization_coreStructureKind * _Nonnull"
+    - Position: 5
+      Type: "ExperimentsKotlinx_serialization_corePolymorphicKindOPEN * _Nonnull"
+    - Position: 6
+      Type: "ExperimentsKotlinx_serialization_corePolymorphicKindSEALED * _Nonnull"
+    - Position: 7
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindBOOLEAN * _Nonnull"
+    - Position: 8
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindBYTE * _Nonnull"
+    - Position: 9
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindCHAR * _Nonnull"
+    - Position: 10
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindDOUBLE * _Nonnull"
+    - Position: 11
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindFLOAT * _Nonnull"
+    - Position: 12
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindINT * _Nonnull"
+    - Position: 13
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindLONG * _Nonnull"
+    - Position: 14
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindSHORT * _Nonnull"
+    - Position: 15
+      Type: "ExperimentsKotlinx_serialization_corePrimitiveKindSTRING * _Nonnull"
+    - Position: 16
+      Type: "ExperimentsKotlinx_serialization_coreStructureKindCLASS * _Nonnull"
+    - Position: 17
+      Type: "ExperimentsKotlinx_serialization_coreStructureKindLIST * _Nonnull"
+    - Position: 18
+      Type: "ExperimentsKotlinx_serialization_coreStructureKindMAP * _Nonnull"
+    - Position: 19
+      Type: "ExperimentsKotlinx_serialization_coreStructureKindOBJECT * _Nonnull"
+Protocols:
+- Name: "ExperimentsKotlinIterator"
+  SwiftName: "KotlinIterator"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hasNext"
+    MethodKind: "Instance"
+    SwiftName: "hasNext()"
+    ResultType: "BOOL"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "id _Nullable"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinAnnotation"
+  SwiftName: "KotlinAnnotation"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinKClass"
+  SwiftName: "KotlinKClass"
+  Properties:
+  - Name: "qualifiedName"
+    PropertyKind: "Instance"
+    SwiftName: "qualifiedName"
+    Type: "NSString * _Nullable"
+  - Name: "simpleName"
+    PropertyKind: "Instance"
+    SwiftName: "simpleName"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "isInstanceValue:"
+    MethodKind: "Instance"
+    SwiftName: "isInstance(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinKDeclarationContainer"
+  SwiftName: "KotlinKDeclarationContainer"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinKAnnotatedElement"
+  SwiftName: "KotlinKAnnotatedElement"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinKClassifier"
+  SwiftName: "KotlinKClassifier"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsSkie_DispatcherDelegate"
+  SwiftName: "Skie_DispatcherDelegate"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "dispatchBlock:"
+    MethodKind: "Instance"
+    SwiftName: "dispatch(block:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreRunnable> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_coroutines_coreFlow"
+  SwiftName: "Kotlinx_coroutines_coreFlow"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_coroutines_coreMutableSharedFlow"
+  SwiftName: "Kotlinx_coroutines_coreMutableSharedFlow"
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "emit(value:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "ExperimentsKotlinx_coroutines_coreSharedFlow"
+  SwiftName: "Kotlinx_coroutines_coreSharedFlow"
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_coroutines_coreFlowCollector"
+  SwiftName: "Kotlinx_coroutines_coreFlowCollector"
+  Methods:
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "emit(value:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_coroutines_coreMutableStateFlow"
+  SwiftName: "Kotlinx_coroutines_coreMutableStateFlow"
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "id<ExperimentsKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "emit(value:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "ExperimentsKotlinx_coroutines_coreStateFlow"
+  SwiftName: "Kotlinx_coroutines_coreStateFlow"
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "collect(collector:completionHandler:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_coroutines_coreRunnable"
+  SwiftName: "Kotlinx_coroutines_coreRunnable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "run"
+    MethodKind: "Instance"
+    SwiftName: "run()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsDataSourceDependencies"
+  SwiftName: "DataSourceDependencies"
+  Properties:
+  - Name: "settingsProvider"
+    PropertyKind: "Instance"
+    SwiftName: "settingsProvider"
+    Type: "id<ExperimentsPreferencesSettingsProvider> _Nonnull"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperimentsDataSourceProvider"
+  SwiftName: "ExperimentsDataSourceProvider"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "dataSource"
+    MethodKind: "Instance"
+    SwiftName: "dataSource()"
+    ResultType: "NSArray<id<ExperimentsObservableExperimentsDataSource>> * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperimentsDependencies"
+  SwiftName: "ExperimentsDependencies"
+  Properties:
+  - Name: "experimentsDataSourceProvider"
+    PropertyKind: "Instance"
+    SwiftName: "experimentsDataSourceProvider"
+    Type: "id<ExperimentsExperimentsDataSourceProvider> _Nonnull"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsPreferencesSettingsProvider"
+  SwiftName: "PreferencesSettingsProvider"
+  Properties:
+  - Name: "settings"
+    PropertyKind: "Instance"
+    SwiftName: "settings"
+    Type: "id<ExperimentsMultiplatform_settingsObservableSettings> _Nonnull"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsOnToggleChange"
+  SwiftName: "OnToggleChange"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "invokeToggle:"
+    MethodKind: "Instance"
+    SwiftName: "invoke(toggle:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsToggle> _Nullable"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsDebugDataSource"
+  SwiftName: "DebugDataSource"
+  Properties:
+  - Name: "priority"
+    PropertyKind: "Instance"
+    SwiftName: "priority"
+    Type: "int32_t"
+  Methods:
+  - Selector: "clear"
+    MethodKind: "Instance"
+    SwiftName: "clear()"
+    ResultType: "void"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolWith:"
+    MethodKind: "Instance"
+    SwiftName: "bool(with:)"
+    ResultType: "ExperimentsBoolToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "stringWith:"
+    MethodKind: "Instance"
+    SwiftName: "string(with:)"
+    ResultType: "ExperimentsStringToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "observeBoolToggleKey:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "observeBoolToggle(key:callBack:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "observeStringToggleKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "observeStringToggle(key:callback:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "setKey:for:"
+    MethodKind: "Instance"
+    SwiftName: "set(key:for:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsToggle> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsObservableExperimentsDataSource"
+  SwiftName: "ObservableExperimentsDataSource"
+  Properties:
+  - Name: "priority"
+    PropertyKind: "Instance"
+    SwiftName: "priority"
+    Type: "int32_t"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolWith:"
+    MethodKind: "Instance"
+    SwiftName: "bool(with:)"
+    ResultType: "ExperimentsBoolToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "stringWith:"
+    MethodKind: "Instance"
+    SwiftName: "string(with:)"
+    ResultType: "ExperimentsStringToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "observeBoolToggleKey:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "observeBoolToggle(key:callBack:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "observeStringToggleKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "observeStringToggle(key:callback:)"
+    ResultType: "id<ExperimentsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperimentsDataSource"
+  SwiftName: "ExperimentsDataSource"
+  Properties:
+  - Name: "priority"
+    PropertyKind: "Instance"
+    SwiftName: "priority"
+    Type: "int32_t"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolWith:"
+    MethodKind: "Instance"
+    SwiftName: "bool(with:)"
+    ResultType: "ExperimentsBoolToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "stringWith:"
+    MethodKind: "Instance"
+    SwiftName: "string(with:)"
+    ResultType: "ExperimentsStringToggle * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsListener"
+  SwiftName: "Listener"
+  Methods:
+  - Selector: "deactivate"
+    MethodKind: "Instance"
+    SwiftName: "deactivate()"
+    ResultType: "void"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperiment"
+  SwiftName: "Experiment"
+  Properties:
+  - Name: "key"
+    PropertyKind: "Instance"
+    SwiftName: "key"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsExperimentsInteractor"
+  SwiftName: "ExperimentsInteractor"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "boolFor:with_:"
+    MethodKind: "Instance"
+    SwiftName: "bool(for:with:)"
+    ResultType: "ExperimentsBoolToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsBoolToggle * _Nonnull"
+  - Selector: "stringFor:with:"
+    MethodKind: "Instance"
+    SwiftName: "string(for:with:)"
+    ResultType: "ExperimentsStringToggle * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsStringToggle * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "subscribeBoolToggleExperiment:defaultValue:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "subscribeBoolToggle(experiment:defaultValue:callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsBoolToggle * _Nonnull"
+    - Position: 2
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "subscribeStringToggleExperiment:defaultValue:callBack:"
+    MethodKind: "Instance"
+    SwiftName: "subscribeStringToggle(experiment:defaultValue:callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsExperiment> _Nonnull"
+    - Position: 1
+      Type: "ExperimentsStringToggle * _Nonnull"
+    - Position: 2
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "unsubscribeBoolToggleCallBack:"
+    MethodKind: "Instance"
+    SwiftName: "unsubscribeBoolToggle(callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+  - Selector: "unsubscribeStringToggleCallBack:"
+    MethodKind: "Instance"
+    SwiftName: "unsubscribeStringToggle(callBack:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsOnToggleChange> _Nonnull"
+- Name: "ExperimentsToggle"
+  SwiftName: "Toggle"
+  Properties:
+  - Name: "canBeModified"
+    PropertyKind: "Instance"
+    SwiftName: "canBeModified"
+    Type: "BOOL"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsMultiplatform_settingsObservableSettings"
+  SwiftName: "Multiplatform_settingsObservableSettings"
+  Properties:
+  - Name: "keys"
+    PropertyKind: "Instance"
+    SwiftName: "keys"
+    Type: "NSSet<NSString *> * _Nonnull"
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "addBooleanListenerKey:defaultValue:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addBooleanListener(key:defaultValue:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+    - Position: 2
+      Type: "void (^ _Nonnull)(ExperimentsBoolean * _Nonnull)"
+  - Selector: "addBooleanOrNullListenerKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addBooleanOrNullListener(key:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(ExperimentsBoolean * _Nullable)"
+  - Selector: "addDoubleListenerKey:defaultValue:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addDoubleListener(key:defaultValue:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "double"
+    - Position: 2
+      Type: "void (^ _Nonnull)(ExperimentsDouble * _Nonnull)"
+  - Selector: "addDoubleOrNullListenerKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addDoubleOrNullListener(key:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(ExperimentsDouble * _Nullable)"
+  - Selector: "addFloatListenerKey:defaultValue:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addFloatListener(key:defaultValue:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "void (^ _Nonnull)(ExperimentsFloat * _Nonnull)"
+  - Selector: "addFloatOrNullListenerKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addFloatOrNullListener(key:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(ExperimentsFloat * _Nullable)"
+  - Selector: "addIntListenerKey:defaultValue:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addIntListener(key:defaultValue:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "void (^ _Nonnull)(ExperimentsInt * _Nonnull)"
+  - Selector: "addIntOrNullListenerKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addIntOrNullListener(key:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(ExperimentsInt * _Nullable)"
+  - Selector: "addLongListenerKey:defaultValue:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addLongListener(key:defaultValue:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "void (^ _Nonnull)(ExperimentsLong * _Nonnull)"
+  - Selector: "addLongOrNullListenerKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addLongOrNullListener(key:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(ExperimentsLong * _Nullable)"
+  - Selector: "addStringListenerKey:defaultValue:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addStringListener(key:defaultValue:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(NSString * _Nonnull)"
+  - Selector: "addStringOrNullListenerKey:callback:"
+    MethodKind: "Instance"
+    SwiftName: "addStringOrNullListener(key:callback:)"
+    ResultType: "id<ExperimentsMultiplatform_settingsSettingsListener> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSString * _Nullable)"
+  - Selector: "clear"
+    MethodKind: "Instance"
+    SwiftName: "clear()"
+    ResultType: "void"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getBooleanKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getBoolean(key:defaultValue:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "getBooleanOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getBooleanOrNull(key:)"
+    ResultType: "ExperimentsBoolean * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getDoubleKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getDouble(key:defaultValue:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "double"
+  - Selector: "getDoubleOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getDoubleOrNull(key:)"
+    ResultType: "ExperimentsDouble * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getFloatKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getFloat(key:defaultValue:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "float"
+  - Selector: "getFloatOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getFloatOrNull(key:)"
+    ResultType: "ExperimentsFloat * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getIntKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getInt(key:defaultValue:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "getIntOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getIntOrNull(key:)"
+    ResultType: "ExperimentsInt * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getLongKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getLong(key:defaultValue:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+  - Selector: "getLongOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getLongOrNull(key:)"
+    ResultType: "ExperimentsLong * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getStringKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getString(key:defaultValue:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "getStringOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getStringOrNull(key:)"
+    ResultType: "NSString * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hasKeyKey:"
+    MethodKind: "Instance"
+    SwiftName: "hasKey(key:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "putBooleanKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putBoolean(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "putDoubleKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putDouble(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "double"
+  - Selector: "putFloatKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putFloat(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "float"
+  - Selector: "putIntKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putInt(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "putLongKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putLong(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+  - Selector: "putStringKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putString(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "removeKey:"
+    MethodKind: "Instance"
+    SwiftName: "remove(key:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsMultiplatform_settingsSettings"
+  SwiftName: "Multiplatform_settingsSettings"
+  Properties:
+  - Name: "keys"
+    PropertyKind: "Instance"
+    SwiftName: "keys"
+    Type: "NSSet<NSString *> * _Nonnull"
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "clear"
+    MethodKind: "Instance"
+    SwiftName: "clear()"
+    ResultType: "void"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getBooleanKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getBoolean(key:defaultValue:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "getBooleanOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getBooleanOrNull(key:)"
+    ResultType: "ExperimentsBoolean * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getDoubleKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getDouble(key:defaultValue:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "double"
+  - Selector: "getDoubleOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getDoubleOrNull(key:)"
+    ResultType: "ExperimentsDouble * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getFloatKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getFloat(key:defaultValue:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "float"
+  - Selector: "getFloatOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getFloatOrNull(key:)"
+    ResultType: "ExperimentsFloat * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getIntKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getInt(key:defaultValue:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "getIntOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getIntOrNull(key:)"
+    ResultType: "ExperimentsInt * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getLongKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getLong(key:defaultValue:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+  - Selector: "getLongOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getLongOrNull(key:)"
+    ResultType: "ExperimentsLong * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getStringKey:defaultValue:"
+    MethodKind: "Instance"
+    SwiftName: "getString(key:defaultValue:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "getStringOrNullKey:"
+    MethodKind: "Instance"
+    SwiftName: "getStringOrNull(key:)"
+    ResultType: "NSString * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hasKeyKey:"
+    MethodKind: "Instance"
+    SwiftName: "hasKey(key:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "putBooleanKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putBoolean(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "putDoubleKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putDouble(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "double"
+  - Selector: "putFloatKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putFloat(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "float"
+  - Selector: "putIntKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putInt(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "putLongKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putLong(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+  - Selector: "putStringKey:value:"
+    MethodKind: "Instance"
+    SwiftName: "putString(key:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "removeKey:"
+    MethodKind: "Instance"
+    SwiftName: "remove(key:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsMultiplatform_settingsSettingsListener"
+  SwiftName: "Multiplatform_settingsSettingsListener"
+  Methods:
+  - Selector: "deactivate"
+    MethodKind: "Instance"
+    SwiftName: "deactivate()"
+    ResultType: "void"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreKSerializer"
+  SwiftName: "Kotlinx_serialization_coreKSerializer"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  Methods:
+  - Selector: "deserializeDecoder:"
+    MethodKind: "Instance"
+    SwiftName: "deserialize(decoder:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreDecoder> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "serializeEncoder:value:"
+    MethodKind: "Instance"
+    SwiftName: "serialize(encoder:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreEncoder> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreSerializationStrategy"
+  SwiftName: "Kotlinx_serialization_coreSerializationStrategy"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "serializeEncoder:value:"
+    MethodKind: "Instance"
+    SwiftName: "serialize(encoder:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreEncoder> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreDeserializationStrategy"
+  SwiftName: "Kotlinx_serialization_coreDeserializationStrategy"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  Methods:
+  - Selector: "deserializeDecoder:"
+    MethodKind: "Instance"
+    SwiftName: "deserialize(decoder:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreDecoder> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreEncoder"
+  SwiftName: "Kotlinx_serialization_coreEncoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "ExperimentsKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "beginCollectionDescriptor:collectionSize:"
+    MethodKind: "Instance"
+    SwiftName: "beginCollection(descriptor:collectionSize:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreCompositeEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "beginStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "beginStructure(descriptor:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreCompositeEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "encodeBooleanValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeBoolean(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "encodeByteValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeByte(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "encodeCharValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeChar(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "unichar"
+  - Selector: "encodeDoubleValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeDouble(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "double"
+  - Selector: "encodeEnumEnumDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "encodeEnum(enumDescriptor:index:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "encodeFloatValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeFloat(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "float"
+  - Selector: "encodeInlineDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInline(descriptor:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "encodeIntValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInt(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "encodeLongValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeLong(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "encodeNotNullMark"
+    MethodKind: "Instance"
+    SwiftName: "encodeNotNullMark()"
+    ResultType: "void"
+  - Selector: "encodeNull"
+    MethodKind: "Instance"
+    SwiftName: "encodeNull()"
+    ResultType: "void"
+  - Selector: "encodeNullableSerializableValueSerializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeNullableSerializableValue(serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "encodeSerializableValueSerializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeSerializableValue(serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "encodeShortValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeShort(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "encodeStringValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeString(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreSerialDescriptor"
+  SwiftName: "Kotlinx_serialization_coreSerialDescriptor"
+  Properties:
+  - Name: "annotations"
+    PropertyKind: "Instance"
+    SwiftName: "annotations"
+    Type: "NSArray<id<ExperimentsKotlinAnnotation>> * _Nonnull"
+  - Name: "elementsCount"
+    PropertyKind: "Instance"
+    SwiftName: "elementsCount"
+    Type: "int32_t"
+  - Name: "isInline"
+    PropertyKind: "Instance"
+    SwiftName: "isInline"
+    Type: "BOOL"
+  - Name: "isNullable"
+    PropertyKind: "Instance"
+    SwiftName: "isNullable"
+    Type: "BOOL"
+  - Name: "kind"
+    PropertyKind: "Instance"
+    SwiftName: "kind"
+    Type: "ExperimentsKotlinx_serialization_coreSerialKind * _Nonnull"
+  - Name: "serialName"
+    PropertyKind: "Instance"
+    SwiftName: "serialName"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getElementAnnotationsIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementAnnotations(index:)"
+    ResultType: "NSArray<id<ExperimentsKotlinAnnotation>> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getElementDescriptorIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementDescriptor(index:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getElementIndexName:"
+    MethodKind: "Instance"
+    SwiftName: "getElementIndex(name:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getElementNameIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementName(index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "isElementOptionalIndex:"
+    MethodKind: "Instance"
+    SwiftName: "isElementOptional(index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreDecoder"
+  SwiftName: "Kotlinx_serialization_coreDecoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "ExperimentsKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "beginStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "beginStructure(descriptor:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreCompositeDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeBoolean"
+    MethodKind: "Instance"
+    SwiftName: "decodeBoolean()"
+    ResultType: "BOOL"
+  - Selector: "decodeByte"
+    MethodKind: "Instance"
+    SwiftName: "decodeByte()"
+    ResultType: "int8_t"
+  - Selector: "decodeChar"
+    MethodKind: "Instance"
+    SwiftName: "decodeChar()"
+    ResultType: "unichar"
+  - Selector: "decodeDouble"
+    MethodKind: "Instance"
+    SwiftName: "decodeDouble()"
+    ResultType: "double"
+  - Selector: "decodeEnumEnumDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeEnum(enumDescriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeFloat"
+    MethodKind: "Instance"
+    SwiftName: "decodeFloat()"
+    ResultType: "float"
+  - Selector: "decodeInlineDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeInline(descriptor:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeInt"
+    MethodKind: "Instance"
+    SwiftName: "decodeInt()"
+    ResultType: "int32_t"
+  - Selector: "decodeLong"
+    MethodKind: "Instance"
+    SwiftName: "decodeLong()"
+    ResultType: "int64_t"
+  - Selector: "decodeNotNullMark"
+    MethodKind: "Instance"
+    SwiftName: "decodeNotNullMark()"
+    ResultType: "BOOL"
+  - Selector: "decodeNull"
+    MethodKind: "Instance"
+    SwiftName: "decodeNull()"
+    ResultType: "ExperimentsKotlinNothing * _Nullable"
+  - Selector: "decodeNullableSerializableValueDeserializer:"
+    MethodKind: "Instance"
+    SwiftName: "decodeNullableSerializableValue(deserializer:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+  - Selector: "decodeSerializableValueDeserializer:"
+    MethodKind: "Instance"
+    SwiftName: "decodeSerializableValue(deserializer:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+  - Selector: "decodeShort"
+    MethodKind: "Instance"
+    SwiftName: "decodeShort()"
+    ResultType: "int16_t"
+  - Selector: "decodeString"
+    MethodKind: "Instance"
+    SwiftName: "decodeString()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreCompositeEncoder"
+  SwiftName: "Kotlinx_serialization_coreCompositeEncoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "ExperimentsKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "encodeBooleanElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeBooleanElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "BOOL"
+  - Selector: "encodeByteElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeByteElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int8_t"
+  - Selector: "encodeCharElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeCharElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "unichar"
+  - Selector: "encodeDoubleElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeDoubleElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "double"
+  - Selector: "encodeFloatElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeFloatElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "float"
+  - Selector: "encodeInlineElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInlineElement(descriptor:index:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "encodeIntElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeIntElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+  - Selector: "encodeLongElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeLongElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int64_t"
+  - Selector: "encodeNullableSerializableElementDescriptor:index:serializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeNullableSerializableElement(descriptor:index:serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<ExperimentsKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "encodeSerializableElementDescriptor:index:serializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeSerializableElement(descriptor:index:serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<ExperimentsKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "encodeShortElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeShortElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int16_t"
+  - Selector: "encodeStringElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeStringElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "endStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "endStructure(descriptor:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "shouldEncodeElementDefaultDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "shouldEncodeElementDefault(descriptor:index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreCompositeDecoder"
+  SwiftName: "Kotlinx_serialization_coreCompositeDecoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "ExperimentsKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "decodeBooleanElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeBooleanElement(descriptor:index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeByteElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeByteElement(descriptor:index:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeCharElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeCharElement(descriptor:index:)"
+    ResultType: "unichar"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeCollectionSizeDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeCollectionSize(descriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeDoubleElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeDoubleElement(descriptor:index:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeElementIndexDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeElementIndex(descriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeFloatElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeFloatElement(descriptor:index:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeInlineElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeInlineElement(descriptor:index:)"
+    ResultType: "id<ExperimentsKotlinx_serialization_coreDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeIntElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeIntElement(descriptor:index:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeLongElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeLongElement(descriptor:index:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeNullableSerializableElementDescriptor:index:deserializer:previousValue:"
+    MethodKind: "Instance"
+    SwiftName: "decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<ExperimentsKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "decodeSequentially"
+    MethodKind: "Instance"
+    SwiftName: "decodeSequentially()"
+    ResultType: "BOOL"
+  - Selector: "decodeSerializableElementDescriptor:index:deserializer:previousValue:"
+    MethodKind: "Instance"
+    SwiftName: "decodeSerializableElement(descriptor:index:deserializer:previousValue:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<ExperimentsKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "decodeShortElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeShortElement(descriptor:index:)"
+    ResultType: "int16_t"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeStringElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeStringElement(descriptor:index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "endStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "endStructure(descriptor:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "ExperimentsKotlinx_serialization_coreSerializersModuleCollector"
+  SwiftName: "Kotlinx_serialization_coreSerializersModuleCollector"
+  Methods:
+  - Selector: "contextualKClass:provider:"
+    MethodKind: "Instance"
+    SwiftName: "contextual(kClass:provider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nonnull (^ _Nonnull)(NSArray<id<ExperimentsKotlinx_serialization_coreKSerializer>> * _Nonnull)"
+  - Selector: "contextualKClass:serializer:"
+    MethodKind: "Instance"
+    SwiftName: "contextual(kClass:serializer:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "polymorphicBaseClass:actualClass:actualSerializer:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphic(baseClass:actualClass:actualSerializer:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 2
+      Type: "id<ExperimentsKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "polymorphicDefaultBaseClass:defaultDeserializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefault(baseClass:defaultDeserializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsKotlinx_serialization_coreDeserializationStrategy> _Nullable (^ _Nonnull)(NSString * _Nullable)"
+  - Selector: "polymorphicDefaultDeserializerBaseClass:defaultDeserializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsKotlinx_serialization_coreDeserializationStrategy> _Nullable (^ _Nonnull)(NSString * _Nullable)"
+  - Selector: "polymorphicDefaultSerializerBaseClass:defaultSerializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<ExperimentsKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<ExperimentsKotlinx_serialization_coreSerializationStrategy> _Nullable (^ _Nonnull)(id _Nonnull)"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"

@@ -1,0 +1,11 @@
+framework module Experiments {
+    umbrella header "Experiments.h"
+
+
+    use Foundation
+}
+
+module Experiments.Swift {
+    header "Experiments-Swift.h"
+    requires objc
+}

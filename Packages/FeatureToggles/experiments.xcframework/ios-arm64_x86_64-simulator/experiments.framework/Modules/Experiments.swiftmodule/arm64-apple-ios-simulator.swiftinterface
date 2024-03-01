@@ -1,0 +1,960 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name Experiments
+@_exported import Experiments
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Experiments.Skie.tech_inno_dion__experiments.Experiment {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case boolExperiment(Experiments.BoolExperiment)
+    case stringExperiment(Experiments.StringExperiment)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Experiments.Skie.tech_inno_dion__experiments.Experiment.__Sealed, b: Experiments.Skie.tech_inno_dion__experiments.Experiment.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.tech_inno_dion__experiments.Experiment.__Sealed where __Sealed : Experiments.Experiment
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.tech_inno_dion__experiments.Experiment.__Sealed? where __Sealed : Experiments.Experiment
+extension Experiments.Skie.tech_inno_dion__experiments.Toggle {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case boolToggle(Experiments.BoolToggle)
+    case stringToggle(Experiments.StringToggle)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Experiments.Skie.tech_inno_dion__experiments.Toggle.__Sealed, b: Experiments.Skie.tech_inno_dion__experiments.Toggle.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.tech_inno_dion__experiments.Toggle.__Sealed where __Sealed : Experiments.Toggle
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.tech_inno_dion__experiments.Toggle.__Sealed? where __Sealed : Experiments.Toggle
+public func ExperimentsDataSourceProvider(getSource: @escaping () -> [any Experiments.ObservableExperimentsDataSource]) -> any Experiments.ExperimentsDataSourceProvider
+public func createExperimentsInteractor(getSource: @escaping () -> [any Experiments.ObservableExperimentsDataSource]) -> any Experiments.ExperimentsInteractor
+public func createDebugDataSource(settingsProvider: any Experiments.PreferencesSettingsProvider) -> any Experiments.DebugDataSource
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = Experiments.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: Experiments.SkieSwiftStateFlow<Experiments.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftOptionalMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = Experiments.SkieKotlinOptionalFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftOptionalFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftOptionalFlow<T>
+  @objc deinit
+}
+#endif
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = Experiments.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = Experiments.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = Experiments.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = Experiments.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = Experiments.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = Experiments.Skie_SuspendResult
+      public enum Canceled {
+        public typealias __Kotlin = Experiments.Skie_SuspendResult.Canceled
+      }
+      public enum Error {
+        public typealias __Kotlin = Experiments.Skie_SuspendResult.Error
+      }
+      public enum Success {
+        public typealias __Kotlin = Experiments.Skie_SuspendResult.Success
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = Experiments.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = Experiments.Kotlinx_coroutines_coreFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = Experiments.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = Experiments.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = Experiments.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = Experiments.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = Experiments.Kotlinx_coroutines_coreRunnable
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = Experiments.Skie.KotlinxCoroutinesCore
+  public enum tech_inno_dion__experiments {
+    public enum Experiment {
+    }
+    public enum Toggle {
+    }
+  }
+  public typealias tech_inno_dion__experiments_ = Experiments.Skie.tech_inno_dion__experiments
+  public enum KotlinxSerializationCore {
+    public enum PolymorphicKind {
+    }
+    public enum SerialKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+    public enum SerializersModule {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = Experiments.Skie.KotlinxSerializationCore
+}
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = Experiments.SkieKotlinStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public var value: T {
+    get
+  }
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftStateFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftFlow<T>) -> Experiments.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftFlow<T>) -> Experiments.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>) -> Experiments.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: Experiments.SkieSwiftMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>) -> Experiments.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension Experiments.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: Experiments.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: Experiments.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: Experiments.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = Experiments.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public var value: T? {
+    get
+  }
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftOptionalStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalStateFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftOptionalStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = Experiments.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = Experiments.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftSharedFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = Experiments.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: Experiments.SkieSwiftStateFlow<Experiments.KotlinInt> {
+    get
+  }
+  final public var value: T? {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftOptionalMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = Experiments.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftOptionalSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = Experiments.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: Experiments.SkieSwiftStateFlow<Experiments.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftMutableSharedFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = Experiments.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = Experiments.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: Experiments.SkieSwiftStateFlow<Experiments.KotlinInt> {
+    get
+  }
+  final public var value: T {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  final public func makeAsyncIterator() -> Experiments.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> Experiments.SkieSwiftMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: Experiments.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout Experiments.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: Experiments.SkieSwiftMutableStateFlow<T>._ObjectiveCType?) -> Experiments.SkieSwiftMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+extension Experiments.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(Experiments.Skie_SuspendResult.Canceled)
+    case error(Experiments.Skie_SuspendResult.Error)
+    case success(Experiments.Skie_SuspendResult.Success)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Experiments.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: Experiments.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : Experiments.Skie_SuspendResult
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : Experiments.Skie_SuspendResult
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  public typealias Element = T
+  @objc deinit
+  #if compiler(>=5.3) && $AsyncAwait
+  public func next() async -> Experiments.SkieSwiftFlowIterator<T>.Element?
+  #endif
+}
+#endif
+extension Experiments.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: Experiments.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: Experiments.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: Experiments.SkieColdFlowIterator<E>) -> Experiments.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension Experiments.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> Experiments.KotlinBoolean
+  #endif
+}
+extension Experiments.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(Experiments.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(Experiments.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(Experiments.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(Experiments.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Experiments.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: Experiments.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : Experiments.Kotlinx_serialization_coreStructureKind
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : Experiments.Kotlinx_serialization_coreStructureKind
+extension Experiments.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(Experiments.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(Experiments.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(Experiments.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(Experiments.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(Experiments.Kotlinx_serialization_coreStructureKind)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Experiments.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: Experiments.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : Experiments.Kotlinx_serialization_coreSerialKind
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : Experiments.Kotlinx_serialization_coreSerialKind
+extension Experiments.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(Experiments.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(Experiments.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Experiments.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: Experiments.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : Experiments.Kotlinx_serialization_corePolymorphicKind
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : Experiments.Kotlinx_serialization_corePolymorphicKind
+extension Experiments.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: Experiments.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: Experiments.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : Experiments.Kotlinx_serialization_coreSerializersModule
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : Experiments.Kotlinx_serialization_coreSerializersModule
+extension Experiments.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(Experiments.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(Experiments.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(Experiments.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(Experiments.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(Experiments.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(Experiments.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(Experiments.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(Experiments.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(Experiments.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Experiments.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: Experiments.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> Experiments.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : Experiments.Kotlinx_serialization_corePrimitiveKind
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> Experiments.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : Experiments.Kotlinx_serialization_corePrimitiveKind
+extension Experiments.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}

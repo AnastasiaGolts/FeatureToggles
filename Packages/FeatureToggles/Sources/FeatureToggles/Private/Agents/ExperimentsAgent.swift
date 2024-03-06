@@ -9,6 +9,7 @@ import CArch
 // MARK: - ExperimentsAgent
 final actor ExperimentsAgent: BusinessLogicAgent, ExperimentsEngineMutable, ExperimentsEngineReadOnly {
     
+    
     let interactor: ExperimentsInteractor
 //    let debugDataSource: DebugDataSource
     
@@ -16,12 +17,17 @@ final actor ExperimentsAgent: BusinessLogicAgent, ExperimentsEngineMutable, Expe
 
         let debugDataSource = DebugDataSourceFactory(dataSourceDependencies: DataSourcesDependenciesImplementation(settingsProvider: ExperimentsPreferencesSettingsProvider())).debugDataSource
         
-        let experimentsDependencies = ExperimentsDependenciesImplementation(experimentsDataSourceProvider: ExperimentsDataSourceProviderImplementation(sources: [debugDataSource, LocalExperimentsDataSource()]))
+        let localExperiments = LocalExperimentsDataSource(localExperiments: [:])
+        let experimentsDependencies = ExperimentsDependenciesImplementation(experimentsDataSourceProvider: ExperimentsDataSourceProviderImplementation(sources: [debugDataSource, localExperiments]))
         
         self.interactor = ExperimentsInteractorFactory(deps: experimentsDependencies).interactor
     }
     
     func bool(for experiment: Experiment, with toggle: BoolToggle) -> Bool {
         interactor.bool(for: experiment, with: toggle).value
+    }
+    
+    func set(key: ExperimentsKeys, for toggle: Toggle) async {
+        
     }
 }

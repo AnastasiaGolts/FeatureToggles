@@ -21,8 +21,8 @@ class ViewController: UIViewController {
 //            print("Feature ON")
 //        } else {
 //            print("Feature OFF")
-        }
-        
+//        }
+//        
 //        let settingsProvider = ExperimentsPreferencesSettingsProvider()
 //        let datasourceDependencies = DataSourcesDependenciesImpl(settingsProvider: settingsProvider)
 //        let dataSourceFactory = DebugDataSourceFactory(dataSourceDependencies: datasourceDependencies)
@@ -34,7 +34,8 @@ class ViewController: UIViewController {
 //        
 //        let experimentsDependencies = ExperimentsDependenciesImpl(experimentsDataSourceProvider: experimentsDataSourceProvider)
 //        let interactorFactory = ExperimentsInteractorFactory(deps: experimentsDependencies)
-        
+//        
+//        let interactor: ExperimentsInteractor = interactorFactory.interactor
 //        var isActive = Feature1(key: "Feature1").bool(interactor: interactor).value
 //        if isActive {
 //            print("Feature1 ON")
@@ -48,13 +49,13 @@ class ViewController: UIViewController {
 //        } else {
 //            print("Feature2 OFF")
 //        }
-//        let interactor: ExperimentsInteractor = interactorFactory.interactor
+        
 //        interactor.funcToTest()
 //        let i = FlowExperimentsInteractor(experimentsInteractor: interactor)
 //        let flow = i.boolToggleFlow(experiment: Feature1(key: ""), defaultValue: .init(value: true, canBeModified: false))
 //        let publisher = createPublisher(for: flow)
 //        publisher.sink(receiveCompletion: <#T##((Subscribers.Completion<Error>) -> Void)##((Subscribers.Completion<Error>) -> Void)##(Subscribers.Completion<Error>) -> Void#>, receiveValue: <#T##((BoolToggle) -> Void)##((BoolToggle) -> Void)##(BoolToggle) -> Void#>)
-//    }
+    }
 }
 
 /*
@@ -181,12 +182,13 @@ final class ExperimentsDependenciesImpl: ExperimentsDependencies {
     }
 }
 
+ */
 /// Class in feature modules
-final class Feature1: BoolExperiment {}
+//final class Feature1: BoolExperiment {}
+//
+//final class Feature2: BoolExperiment {
+//    
+//    var canBeModified = false
+//    var value = false
+//}
 
-final class Feature2: BoolExperiment {
-    
-    var canBeModified = false
-    var value = false
-}
-*/

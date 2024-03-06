@@ -11,5 +11,5 @@ public protocol IntegratorBinder {
 
 public protocol IntegratorProvider {
     
-    func wasSwitched(for toggle: FeatureToggle) async
+    func wasSwitched(for toggle: BoolFeatureToggle) async
 }

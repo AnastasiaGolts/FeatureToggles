@@ -13,7 +13,8 @@ final actor Integrator: IntegratorProvider, IntegratorBinder {
 
         self.debugDataSource = DebugDataSourceFactory(dataSourceDependencies: DataSourcesDependenciesImplementation(settingsProvider: ExperimentsPreferencesSettingsProvider())).debugDataSource
         
-        let experimentsDependencies = ExperimentsDependenciesImplementation(experimentsDataSourceProvider: ExperimentsDataSourceProviderImplementation(sources: [debugDataSource, LocalExperimentsDataSource()]))
+        let localExperiments = LocalExperimentsDataSource(localExperiments: [:])
+        let experimentsDependencies = ExperimentsDependenciesImplementation(experimentsDataSourceProvider: ExperimentsDataSourceProviderImplementation(sources: [debugDataSource, localExperiments]))
         
         self.interactor = ExperimentsInteractorFactory(deps: experimentsDependencies).interactor
     }
@@ -22,5 +23,9 @@ final actor Integrator: IntegratorProvider, IntegratorBinder {
         // вне тогглов?
         // di
         //[param.self: param] - storing in integrator
+    }
+    
+    func wasSwitched(for toggle: BoolFeatureToggle) async {
+        
     }
 }

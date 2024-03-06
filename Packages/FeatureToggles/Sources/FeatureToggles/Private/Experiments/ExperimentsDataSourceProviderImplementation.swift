@@ -2,19 +2,22 @@
 //  ExperimentsDataSourceProviderImplementation.swift
 //
 
-import CArch
 import Foundation
 import Experiments
 
-final class ExperimentsDataSourceProviderImplementation: ExperimentsDataSourceProvider, BusinessLogicEngine {
+final class ExperimentsDataSourceProviderImplementation: ExperimentsDataSourceProvider {
     
     private var sources: [ExperimentsDataSource] = []
     
-    nonisolated init(sources: [ExperimentsDataSource]) {
+    init(sources: [ExperimentsDataSource]) {
         self.sources = sources
     }
     
     func dataSource() -> [ExperimentsDataSource] {
         sources
+    }
+    
+    func dataSource() -> [ObservableExperimentsDataSource] {
+        [ObservableExperimentsDataSource]()
     }
 }

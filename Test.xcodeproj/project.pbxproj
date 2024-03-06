@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E101BB052B85F52E004707A4 /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = E101BB042B85F52E004707A4 /* KMPNativeCoroutinesCombine */; };
 		E101BB432B8C8596004707A4 /* FeatureToggles in Frameworks */ = {isa = PBXBuildFile; productRef = E101BB422B8C8596004707A4 /* FeatureToggles */; };
 		E1E09D3E2B835D4200633663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E09D3D2B835D4200633663 /* AppDelegate.swift */; };
 		E1E09D402B835D4200633663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E09D3F2B835D4200633663 /* SceneDelegate.swift */; };
@@ -34,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E101BB052B85F52E004707A4 /* KMPNativeCoroutinesCombine in Frameworks */,
 				E101BB432B8C8596004707A4 /* FeatureToggles in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +96,6 @@
 			);
 			name = Test;
 			packageProductDependencies = (
-				E101BB042B85F52E004707A4 /* KMPNativeCoroutinesCombine */,
 				E101BB422B8C8596004707A4 /* FeatureToggles */,
 			);
 			productName = Test;
@@ -130,7 +127,6 @@
 			);
 			mainGroup = E1E09D312B835D4200633663;
 			packageReferences = (
-				E101BB032B85F52E004707A4 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */,
 				E101BB412B8C8596004707A4 /* XCLocalSwiftPackageReference "Packages/FeatureToggles" */,
 			);
 			productRefGroup = E1E09D3B2B835D4200633663 /* Products */;
@@ -391,23 +387,7 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		E101BB032B85F52E004707A4 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rickclephas/KMP-NativeCoroutines.git";
-			requirement = {
-				kind = exactVersion;
-				version = "1.0.0-ALPHA-24";
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		E101BB042B85F52E004707A4 /* KMPNativeCoroutinesCombine */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E101BB032B85F52E004707A4 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
-			productName = KMPNativeCoroutinesCombine;
-		};
 		E101BB422B8C8596004707A4 /* FeatureToggles */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FeatureToggles;

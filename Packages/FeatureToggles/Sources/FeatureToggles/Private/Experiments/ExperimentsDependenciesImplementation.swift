@@ -2,15 +2,14 @@
 //  ExperimentsDependenciesImplementation.swift
 //
 
-import CArch
 import Foundation
 import Experiments
 
-final class ExperimentsDependenciesImplementation: ExperimentsDependencies, BusinessLogicEngine {
+final class ExperimentsDependenciesImplementation: ExperimentsDependencies {
     
     var experimentsDataSourceProvider: ExperimentsDataSourceProvider
     
-    nonisolated init(experimentsDataSourceProvider: ExperimentsDataSourceProvider) {
+    init(experimentsDataSourceProvider: ExperimentsDataSourceProvider) {
         self.experimentsDataSourceProvider = experimentsDataSourceProvider
     }
 }

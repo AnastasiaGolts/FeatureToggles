@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "FeatureToggles",
+    defaultLocalization: "en",
+    platforms: [
+        .iOS(.v13),
+        .macCatalyst(.v14)
+    ],
     products: [
         .library(
             name: "FeatureToggles",
@@ -14,7 +19,7 @@ let package = Package(
             ]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ayham-achami/CArchSwinject.git", branch: "feature/v-3.0.0")
+        .package(url: "https://github.com/rickclephas/KMP-NativeCoroutines.git", exact: "1.0.0-ALPHA-24")
     ],
     targets: [
         .binaryTarget(name: "Experiments", path: "./experiments.xcframework"),
@@ -22,7 +27,7 @@ let package = Package(
             name: "FeatureToggles",
             dependencies: [
                 "Experiments",
-                "CArchSwinject"
+                .product(name: "KMPNativeCoroutinesCombine", package: "KMP-NativeCoroutines"),
             ],
             path: "Sources")
     ]

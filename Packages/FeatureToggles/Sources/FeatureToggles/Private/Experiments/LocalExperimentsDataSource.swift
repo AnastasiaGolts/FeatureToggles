@@ -2,7 +2,6 @@
 //  LocalExperimentsDataSource.swift
 //
 
-import CArch
 import Foundation
 import Experiments
 

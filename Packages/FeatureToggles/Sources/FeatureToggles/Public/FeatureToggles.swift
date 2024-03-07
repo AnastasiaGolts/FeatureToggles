@@ -47,7 +47,7 @@ public class FeatureToggles {
         BoolExperiment(key: key).bool(interactor: interactor).value
     }
     
-    func getBoolPublisher(for toggle: BoolFeatureToggle) -> AnyPublisher<BoolToggle, Error> {
+    func boolPublisher(for toggle: BoolFeatureToggle) -> AnyPublisher<BoolToggle, Error> {
         let flow = flowInteracor.boolToggleFlow(experiment: toggle.key, defaultValue: toggle.toggleValue)
         return createPublisher(for: flow)
     }

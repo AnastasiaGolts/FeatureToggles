@@ -2,19 +2,14 @@
 //  DataSourcesDependenciesImplementation.swift
 //
 
-import CArch
 import Foundation
 import Experiments
 
-final class DataSourcesDependenciesImplementation: DataSourceDependencies, BusinessLogicEngine {
+final class DataSourcesDependenciesImplementation: DataSourceDependencies {
     
     var settingsProvider: PreferencesSettingsProvider
     
-    nonisolated init(settingsProvider: PreferencesSettingsProvider) {
+    init(settingsProvider: PreferencesSettingsProvider) {
         self.settingsProvider = settingsProvider
     }
 }
-
-extension ExperimentsPreferencesSettingsProvider: BusinessLogicEngine { }
-extension DebugDataSourceFactory: BusinessLogicEngine { }
-extension ExperimentsInteractorFactory: BusinessLogicEngine { }

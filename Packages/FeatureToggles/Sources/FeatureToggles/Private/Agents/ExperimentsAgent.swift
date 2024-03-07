@@ -4,10 +4,9 @@
 
 import Foundation
 import Experiments
-import CArch
 
 // MARK: - ExperimentsAgent
-final actor ExperimentsAgent: BusinessLogicAgent, ExperimentsEngineMutable, ExperimentsEngineReadOnly {
+final actor ExperimentsAgent: ExperimentsEngineMutable, ExperimentsEngineReadOnly {
     
     
     let interactor: ExperimentsInteractor
